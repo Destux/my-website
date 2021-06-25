@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "author" content = "Destux">
+	<meta name = "description" content = "First Website I will host on the internet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src = "js/p5.min.js"></script>
+	<script src = "js/drop.js"></script>
+	<script src="js/bubble.js"></script>
+	<script src = "js/blue-rain.js"></script>
+	<script src = "js/red-rain.js"></script>
+	<script src="js/blue-bubble.js"></script>
+	<script src="js/red-bubble.js"></script>
+	<script src = "js/main-p5.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Okaeri👋</title>
+</head>
+<body>
+	<div id="header">
+		<h1>Hi, I'm Sudhanshu, a.k.a. Destux</h1>
+		<h2>I'm 18, currently pursuing Comp Sci from <a href="http://rknec.edu/" target="_blank">RCOEM</a></h2>
+		<h2>I'm an aspiring software/web developer.</h2>
+	</div>
+	<div id="main">
+		<p>Uhhhh I guess this is where my achievements and shitz was supposed to go. If I had any. Which I don't. But I don't want this all to be just some lorem ipsum copy pasta, so I'll just write some bullshit till this feels enough. So I was reading <a href="https://www.wix.com/blog/2020/03/personal-website-examples/" target="_blank" alt="An article on best personal websites">this article on best personal websites</a> and most of the websites in that refer to the person in 3rd person, but prolly none of em made the website themself, so I don't think I need to do the 3rd person thing, it just feels cringe. Alot of people there also added their images on their websites, which I definitely won't or else my parents will prolly ground me for a month. So this isn't gonna be proffesional anyway, so might as well do whatever the heck I want. If you wanna see a picture of me that bad,<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"> here ya go</a>.</p>
+		
+		<p>So, I am Sudhanshu blah blah blah aspiring developer. I prolly should've paid some more attention in English lec cos I have no idea wtf I am supposed to write now. Why are you reading this anyway? Just go ahead and click on the "Menu" at the top left and mess with the settings abit and enjoy the art of <a href="https://p5js.org/" target="">p5.js.</a> I spent an awfully long time on the p5 part, as compared to the 15 mins on this entire text.</p>
+
+		<p>PS: In case something on the page is broken or isn't working, you can contact me with a screenshot on any of the given social platforms, or you prolly even have my number which you can WhatsApp me on. And if any of you try to inspect and troll me, I wish your invigilator keeps you pinned the entire time.</p>
+
+		<p>I am typing all this before I do the CSS, so I have no idea whether what I've written will be enough or not, but just in case it isn't I should add abit more here. Why are you still reading this tho? Menu , top left, go. Aight this should be enough.</p>
+	</div>
+
+
+	<button onclick="openNav()" id="openNav"><h3> Menu</h3></button>
+
+
+	<div id="mySidenav" class="sidenav" style="visibility: hidden;">
+		<a href="javascript:void(0)" class="closeNav" onclick="closeNav()">&times</a>
+		<h3>Rain: </h3>
+		<ul type="none">
+			<li><input type="checkbox" id="blue_rain" class="checkb" onclick="blueRaincaller()">
+			<label for="blue_rain">Blue Rain</label></li>
+			<li><input type="checkbox" id="red_rain" class="checkb" onclick="redRaincaller()">
+			<label for="red_rain">Red Rain</label></li>
+		</ul>
+
+		<h3>Bubbles</h3>
+		<ul type="none">
+			<li><input type="checkbox" id="blue_bubble" class="checkb" onclick="blueBubbleCaller()">
+			<label for="blue_bubble">Blue Bubbles</label></li>
+			<li><input type="checkbox" id="red_bubble" class="checkb" onclick="redBubbleCaller()">
+			<label for="red_bubble">Red Bubbles</label></li>
+		</ul>
+
+		<h3>Monthly Resolutions and Blogs</h3>
+		<ol type="none">
+			<li><a href="resolutions/july2021.html">Resolutions of July 2021</a></li>
+		</ol>
+		
+		<div id="footer">
+			<a href="https://github.com/Destux" target="_blank">
+				<img src="media/github-icon.png" alt="Github" height="40px">
+			</a>
+			<a href="https://www.instagram.com/sudhanshu.7282/" target="_blank">
+				<img src="media/insta-icon.jpg" alt="Instagram" height="40px">
+			</a>
+			<a href="https://www.linkedin.com/in/sudhanshu-pandey-destux/" target="_blank">
+				<img src="media/linkedin-icon.jpg" alt="LinkedIn" height="40px">
+			</a>
+			<a href="https://discord.gg/Qnq3hUCmVY" target="_blank">
+				<img src="media/discord-icon.jpg" alt="Discord" height="40px">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

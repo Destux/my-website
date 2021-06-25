@@ -1,0 +1,104 @@
+html {
+	background-color: rgba(48,56,65,1);
+	color: #82a57d;
+}
+
+body{
+	color: white;
+	padding-left: 20%;
+  z-index:0;
+}
+
+body p {
+	padding-right: 25%;
+	font-size: 20px;
+}
+
+a {
+  position: relative;
+	color: orange;
+	text-decoration: none;
+  z-index: 2;
+}
+
+a:hover {
+	color: darkorange;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+#header {
+	text-shadow: 2px 2px 10px #c20d1a;
+  transition: margin-left .5s;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	background-color: rgba(77,126,182,0.5);
+	color: cyan;
+	/*background-color: rgba(138, 43, 226, 0.5);*/
+}
+
+.sidenav .closeNav {
+	position: absolute;
+	top: 0px;
+	left: 170px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+#main {
+	transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+button {
+	z-index: 4;
+	position: absolute;
+	background-color: rgba(48,56,65,0);
+	top: 0px;
+	left: 0px;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.sidenav h3 {;
+	font-family: 'Viaoda Libre', cursive;	
+}
+
+#footer {
+	position: absolute;
+	z-index: 4;
+	bottom: 0px;
+	left: 0px;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#musicReference {
+	position: fixed;
+	top: 300px;
+	left: 30px;
+	height: 50px;
+	font-size: 25px;
+	color: cyan;
+}
