@@ -1,6 +1,5 @@
 /* 
 Project Name: Monthly Resolutions
-Client: One Month
 Author: Sudhanshu | Destux
 */
 
@@ -72,7 +71,7 @@ html {
 
 #filler {
      background-color: red;
-     height: 75px;
+     height: 78px;
      width: 4px;
      float: left;
      margin-right: 10px;
@@ -82,6 +81,10 @@ html {
 .borderbelow {
      border-style: none none solid none;
      border-color: red;
+}
+
+#home-icon {
+     float: left;
 }
 /*----------------------------------------------------------------------------- 
 03=MAIN  
@@ -115,4 +118,10 @@ html {
 a {
      color: red;
      text-decoration: none;
+}
+
+#quote {
+     border-style: none none none solid;
+     border-color: red;
+     padding-left: 10px;
 }

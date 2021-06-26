@@ -1,3 +1,13 @@
+/*Project Name:  Personal Website
+Developer:  Sudhanshu | Destux
+*/
+
+*{
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
 html {
 	background-color: rgba(48,56,65,1);
 	color: #82a57d;
@@ -52,14 +62,6 @@ h2 {
 	/*background-color: rgba(138, 43, 226, 0.5);*/
 }
 
-.sidenav .closeNav {
-	position: absolute;
-	top: 0px;
-	left: 170px;
-	font-size: 36px;
-	margin-left: 50px;
-}
-
 #main {
 	transition: margin-left .5s;
 }
@@ -77,10 +79,26 @@ button {
 	border: none;
 	color: white;
 	cursor: pointer;
+	color: orange;
 }
 
 .sidenav h3 {;
 	font-family: 'Viaoda Libre', cursive;	
+}
+
+.sidenav .closeNav {
+	position: absolute;
+	top: 0px;
+	left: 170px;
+	font-size: 36px;
+	margin: 0;
+	margin-left: 50px;
+	padding: 0;
+	line-height: 0;
+}
+
+.sidenav a {
+	color: cyan;
 }
 
 #footer {
@@ -94,11 +112,13 @@ button {
 	text-decoration: none;
 }
 
-#musicReference {
+
+
+/*#musicReference {
 	position: fixed;
 	top: 300px;
 	left: 30px;
 	height: 50px;
 	font-size: 25px;
 	color: cyan;
-}
+}*/
