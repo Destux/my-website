@@ -31,7 +31,9 @@ function bubble() {
     	ellipse(this.x,this.y,this.radius);
 	}
 
-	this.justRise = function() {
+	this.justRise = function(deadBubbles) {
 		this.y = this.y + this.yspeed;
-	}
+		if(this.y > height + this.radius)
+     		deadBubbles++;
+    }
 }

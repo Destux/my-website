@@ -1,8 +1,11 @@
 var BlueDrops=[];
-var canvas;
+var blueDeadDrops = 0;
+var	blueHalfdeadDrops = 0;
+var blueTotalDrops = 0;
 
 function setupOfBlueRain(){
-	for(var i=0;i<numberOfDrops;i++){
+	blueTotalDrops += numberOfDrops;
+	for(var i = blueHalfdeadDrops; i < blueTotalDrops; i++){
 		BlueDrops[i]=new drop();
 		BlueDrops[i].colourred = 77;
 		BlueDrops[i].colourblue = 126;
@@ -12,15 +15,23 @@ function setupOfBlueRain(){
 
 function drawOfBlueRain(){
 	background(0,0,0,0);
-	for (var i = 0; i < BlueDrops.length; i++) {
+	for (var i = blueHalfdeadDrops; i < blueTotalDrops; i++) {
 		BlueDrops[i].fall();
-    BlueDrops[i].show();
-  }
+    	BlueDrops[i].show();
+  	}
+  	for(var i = blueDeadDrops; i < blueHalfdeadDrops; i++){
+		BlueDrops[i].justFall(blueDeadDrops);
+		BlueDrops[i].show();
+  	}
 }
 
-function stopBlueRain() {
+function blueDeadDropsAdder(){
+	blueHalfdeadDrops += numberOfDrops;
+}
+
+/*function stopBlueRain() {
 	for(var i = 0;i < BlueDrops.length; i++){
-		BlueDrops[i].justFall();
+		BlueDrops[i].justFall(deadDrops);
 		BlueDrops[i].show();
 	}
 }
@@ -29,4 +40,4 @@ function pauseBlueRain() {
 	for(var i = 0;i < BlueDrops.length; i++){
 		BlueDrops[i].show();
 	}
-}
+}*/

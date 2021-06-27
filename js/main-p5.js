@@ -9,6 +9,11 @@ function draw(){
 	canvas = createCanvas(windowWidth,windowHeight);
 	canvas.position(0,0);
 
+	drawOfBlueRain();
+	drawOfRedRain();
+	drawOfBlueBubbles();
+	drawOfRedBubbles();
+	/*
 	if(blueSwitch == 1)
 		drawOfBlueRain();
 	else
@@ -18,7 +23,6 @@ function draw(){
 		drawOfRedRain();
 	else
 		stopRedRain();
-
 
 
 	if(blueBubbleSwitch == 1){
@@ -36,5 +40,5 @@ function draw(){
 	else{
 		fill('rgba(226,92,91,0.4)')
 		stopRedBubbles();
-	}
+	}*/
 }

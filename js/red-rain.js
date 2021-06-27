@@ -1,8 +1,11 @@
-var RedDrops=[];
-var canvas;
+var RedDrops = [];
+var redDeadDrops = 0;
+var	redHalfdeadDrops = 0;
+var redTotalDrops = 0;
 
 function setupOfRedRain(){
-	for(var i=0;i<numberOfDrops-75;i++){
+	redTotalDrops += numberOfDrops;
+	for(var i = redHalfdeadDrops; i < redTotalDrops; i++){
 		RedDrops[i]=new drop();
 		RedDrops[i].colourred = 226;
 		RedDrops[i].colourblue = 92;
@@ -12,15 +15,29 @@ function setupOfRedRain(){
 
 function drawOfRedRain(){
 	background(0,0,0,0);
-	for (var i = 0; i < RedDrops.length; i++) {
+	for (var i = redHalfdeadDrops; i < redTotalDrops; i++) {
 		RedDrops[i].fall();
-    RedDrops[i].show();
-  }
+    	RedDrops[i].show();
+  	}
+  	for(var i = redDeadDrops; i < redHalfdeadDrops; i++){
+		RedDrops[i].justFall(redDeadDrops);
+		RedDrops[i].show();
+  	}
 }
 
-function stopRedRain() {
+function redDeadDropsAdder(){
+	redHalfdeadDrops += numberOfDrops;
+}
+
+/*function stopRedRain() {
 	for(var i = 0;i < RedDrops.length; i++){
-		RedDrops[i].justFall();
+		RedDrops[i].justFall(deadDrops);
 		RedDrops[i].show();
 	}
 }
+
+function pauseRedRain() {
+	for(var i = 0;i < RedDrops.length; i++){
+		RedDrops[i].show();
+	}
+}*/

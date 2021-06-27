@@ -1,27 +1,32 @@
-var blueSwitch = 0;
-var redSwitch = 0;
 var blueBubbleSwitch = 0;
 var redBubbleSwitch = 0;
 var numberOfDrops = 250;
 var numberOfBubbles = 20;
 
-var checks = document.getElementsByClassName("checkb");
-for(var i = 0; i < checks.length; i++){
-	checks[i].checked = false;
+function uncheckAll(){
+	var checks = document.getElementsByClassName("checkb");
+	for(var i = 0; i < checks.length; i++){
+		checks[i].checked = false;
+	}
 }
 
 function blueRaincaller(){
 	var bluerain = document.getElementById("blue_rain");
-	if(bluerain.checked == true) {
+	if(bluerain.checked == true) 
 		setupOfBlueRain();
-		blueSwitch = 1;
-	}
-	else{
-		blueSwitch = 0;
-	}
+	else
+		blueDeadDropsAdder();
 }
 
 function redRaincaller(){
+	var redrain = document.getElementById("red_rain");
+	if(redrain.checked == true)
+		setupOfRedRain();
+	else
+		redDeadDropsAdder();
+}
+
+/*function redRaincaller(){
 	var redrain = document.getElementById("red_rain");
 	if(redrain.checked == true) {
 		setupOfRedRain();
@@ -29,16 +34,14 @@ function redRaincaller(){
 	}
 	else
 		redSwitch = 0;
-}
+}*/
 
 function blueBubbleCaller(){
 	var bluebubble = document.getElementById("blue_bubble");
-	if(bluebubble.checked == true) {
+	if(bluebubble.checked == true)
 		setupOfBlueBubbles();
-		blueBubbleSwitch = 1;
-	}
 	else
-		blueBubbleSwitch = 0;
+		blueDeadBubblesAdder();
 }
 
 function redBubbleCaller(){

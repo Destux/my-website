@@ -22,14 +22,18 @@ function drop() {
     }
   };
 
+
   this.show = function() {
     stroke(this.colourred,this.colourblue,this.colourgreen);
     strokeWeight(this.weight);
     line(this.x, this.y, this.x, this.y + this.len);
   };
 
-  this.justFall = function() {
+
+  this.justFall = function(deadDrops) {
     this.y = this.y + this.yspeed;
     this.yspeed = this.yspeed + this.grav;
+    if(this.y > height)
+      deadDrops++;
   }
 }
