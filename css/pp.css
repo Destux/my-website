@@ -1,0 +1,53 @@
+html {
+	background-color: #192841;
+	color: cyan;
+	text-align: center;
+	z-index: 1;
+}
+
+#menu {
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0);
+	top: 100px;
+	left: 660px;
+	border: none;
+	color: cyan;
+	z-index: 2;
+}
+
+#score {
+	line-height: 5px;
+}
+
+#openMenu {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0);
+	top: 0px;
+	left: 0px;
+	border: none;
+	color: cyan;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#closeMenu {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0);
+	top: 0px;
+	left: 0px;
+	border: none;
+	color: cyan;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#resume {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	color: #551a8b;
+	cursor: pointer;
+	z-index: 2;
+	text-decoration: underline;
+	font-size: 200%;
+}

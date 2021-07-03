@@ -1,3 +1,8 @@
 .clearsmall {
      clear: both;
 }
+
+#sidenav {
+     position: absolute;
+     width: 600px;
+}

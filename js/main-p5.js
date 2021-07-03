@@ -13,6 +13,7 @@ function draw(){
 	drawOfRedRain();
 	drawOfBlueBubbles();
 	drawOfRedBubbles();
+	
 	/*
 	if(blueSwitch == 1)
 		drawOfBlueRain();

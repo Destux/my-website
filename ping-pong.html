@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ping Pong game by Destux 😺</title>
+
+	<!--Meta Tags-->
+	<meta charset = "utf-8">
+	<meta name = "author" content = "Destux a.k.a. Sudhanshu">
+	<meta name = "description" content = "First Website I will host on the internet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/pp.css">
+</head>
+<body>
+	<div class="game">
+		<h1>Score</h1>
+		<h2 id="score"></h2>
+	</div>
+	<button onclick="openMenu()" id="openMenu">Menu</button>
+	<button onclick="closeMenu()" id="closeMenu" style="display: none;">Close Menu</button>
+
+	<div id="menu">
+		<h1 id="gamePaused">Game Paused</h1>
+		<button onclick="closeMenu()" id="resume">Continue Game</button>
+		<a href="ping-pong.html"><h2 id="restartGame">Restart Game</h2></a>
+		<a href="index.html"><h2 id="home">Home</h2></a>
+	</div>
+
+	<!--JS-->
+	<script src="js/p5.min.js"></script>
+	<script src="js/pp.js"></script>
+	<script src="js/ppppp.js"></script>
+</body>
+</html>
