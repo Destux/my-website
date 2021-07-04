@@ -51,6 +51,11 @@ function draw() {
 				ball.reinitialize();
 			}
 		}
+    if(m>7 && m>n/2){
+      ball.reinitialize();
+      alert("Congratulations, you beat the game. A true winner");
+    }
+    
 		rect(windowWidth/2-450,racket_positionY,25,200);
 		rect(windowWidth/2+450,playerY,25,200);			//player racket
 		circle(ball.positionX,ball.positionY,30);		//ball
@@ -122,6 +127,10 @@ function openMenu() {
 	document.getElementById("openMenu").style.display = "none";
 	document.getElementById("menu").style.display = "inline";
 	document.getElementById("menu").style.zIndex = "15";
+  if(n == 69){
+    alert("Congratulations, you beat the game. A true winner");
+    ball.reinitialize();
+  }
 }
 function closeMenu(){
 	gameOn = true;
